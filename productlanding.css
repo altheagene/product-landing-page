@@ -1,0 +1,317 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+#header{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+#nav-bar{
+    width: 100%;
+    height: 90px;
+    background-color: #E5CFF7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.nav-link{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    height: fit-content;
+}
+
+.nav-link:hover{
+    color: #E5CFF7;
+    background-color: #304463;
+}
+
+#header-img{
+    height: 90px;
+}
+
+.sections{
+    width: 45%;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#Home{
+    display: flex;
+    text-align: center;
+    padding: 5rem 5rem 7rem 5rem;
+    background-color: #304463;
+    color: white
+
+}
+
+.home-title{
+    width: 40%;
+    text-align: left;
+    padding: 20px 50px 20px 0;
+}
+
+.home-title h1{
+    font-size: 6rem;
+    font-weight: 510;
+}
+
+.home-title p{
+    padding-top: 20px;
+    font-size: 1.5rem;
+}
+
+.home-img{
+    width: 60%;
+    border-radius: 10%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+/* PRODUCTS */
+
+#Products{
+    padding: 20px 50px;
+    background-color: #F7F9F2;
+}
+
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 50px 0;
+}
+
+.section-title{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 550;
+    color: #102C57;
+}
+
+.dark-bg{
+    color:#F7F9F2 ;
+}
+
+.product-div{
+    width: 20%;
+    height: 500px;
+    text-align: center;
+}
+
+.product-div span{
+    font-weight: 600;
+}
+
+.product-div p{
+    font-size: 1.2rem;
+}
+
+.product-div p, .product-div h2{
+    color: #402B3A;
+}
+
+.product-img{
+    height: 320px;
+}
+
+/* ABOUT US */
+
+#About_Us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    background-color: #304463;
+}
+
+#video{
+    padding: 30px 0;
+    width: 655px;
+    height: 410px;
+}
+
+/* REVIEWS */
+
+#Reviews{
+    background-color: #F1B4BB;
+    padding-top: 50px;
+}
+
+.review-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.review-div{
+    width: 60%;
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #F7F9F2;
+    border-radius: 10px;
+}
+
+.review-div p{
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.stars{
+    height: 40px;
+}
+
+/* SIGN UP */
+
+#Sign_Up{
+    padding: 80px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#Sign_Up h1{
+    font-size: 4rem;
+}
+
+.email-div{
+    width: 30%;
+}
+
+.email-div h1{
+    color: #102C57
+}
+
+form{
+    display: block;
+}
+
+#email{
+    height: 50px;
+    width: 80%;
+    margin: 20px 0;
+    padding: 0 20px;
+    font-size: 0.8rem;
+}
+
+#submit{
+    width: 20%;
+    height: 30px;
+    background-color: #E5CFF7;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+#submit:hover{
+    color: white;
+    background-color:#102C57 ;
+}
+input{
+    display: block;
+}
+
+.bottom-img{
+    width: 60%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+@media (max-width:1000px){
+    .sections{
+        width: 60%;
+        padding: 2rem 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .nav-link{
+        font-size: 1.2rem;
+    }
+    
+    #Home{
+        flex-direction: column;
+    }
+
+    .home-title{
+        width: 100%;
+        text-align: left;
+        padding: 20px 50px 20px 0;
+    }
+
+    .home-title h1{
+        font-size: 4rem;
+        font-weight: 510;
+    }
+
+    .product-list{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 0;
+    }
+
+    .product-div{
+        width: 100%;
+        height: 500px;
+        text-align: center;
+    }
+
+    #video{
+        padding: 30px 20px;
+        width: 100%;
+    }
+
+    .home-img{
+        width: 100%;
+        border-radius: 10%;
+        object-fit: cover;
+        border: 2px solid white;
+    }
+
+    #Sign_Up{
+        padding: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    #Sign_Up h1{
+        font-size: 3.5rem;
+    }
+    .email-div{
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .bottom-img{
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    
+    
+}
